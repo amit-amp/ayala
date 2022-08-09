@@ -5,4 +5,5 @@ export type CryptoToken = {
   financialAssets?: FinancialAsset | null;
   id: string;
   updatedAt: Date;
+  value: string | null;
 };
