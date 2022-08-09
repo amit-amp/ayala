@@ -5,4 +5,5 @@ export type CryptoTokenOrderByInput = {
   financialAssetsId?: SortOrder;
   id?: SortOrder;
   updatedAt?: SortOrder;
+  value?: SortOrder;
 };

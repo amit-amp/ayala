@@ -30,6 +30,7 @@ export const CryptoTokenList = (props: ListProps): React.ReactElement => {
         </ReferenceField>
         <TextField label="ID" source="id" />
         <DateField source="updatedAt" label="Updated At" />
+        <TextField label="value" source="value" />
       </Datagrid>
     </List>
   );

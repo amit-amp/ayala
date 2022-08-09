@@ -23,6 +23,7 @@ export const CryptoTokenShow = (props: ShowProps): React.ReactElement => {
         </ReferenceField>
         <TextField label="ID" source="id" />
         <DateField source="updatedAt" label="Updated At" />
+        <TextField label="value" source="value" />
       </SimpleShowLayout>
     </Show>
   );

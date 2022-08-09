@@ -2,4 +2,5 @@ import { FinancialAssetWhereUniqueInput } from "../financialAsset/FinancialAsset
 
 export type CurrencyUpdateInput = {
   financialAssets?: FinancialAssetWhereUniqueInput | null;
+  value?: string | null;
 };
