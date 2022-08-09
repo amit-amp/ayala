@@ -24,7 +24,7 @@ model Currency {
   financialAssetsId String?         @unique
   id                String          @id @default(cuid())
   updatedAt         DateTime        @updatedAt
-  value             String?
+  value             String?         @unique
 }
 
 model CryptoToken {
@@ -33,7 +33,7 @@ model CryptoToken {
   financialAssetsId String?         @unique
   id                String          @id @default(cuid())
   updatedAt         DateTime        @updatedAt
-  value             String?
+  value             String?         @unique
 }
 
 model FinancialAsset {
