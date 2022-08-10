@@ -2,4 +2,5 @@ import { FinancialAssetWhereUniqueInput } from "../financialAsset/FinancialAsset
 
 export type CryptoTokenUpdateInput = {
   financialAssets?: FinancialAssetWhereUniqueInput | null;
+  value?: string | null;
 };

@@ -5,4 +5,5 @@ export type CurrencyOrderByInput = {
   financialAssetsId?: SortOrder;
   id?: SortOrder;
   updatedAt?: SortOrder;
+  value?: SortOrder;
 };

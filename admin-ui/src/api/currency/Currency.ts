@@ -5,4 +5,5 @@ export type Currency = {
   financialAssets?: FinancialAsset | null;
   id: string;
   updatedAt: Date;
+  value: string | null;
 };
