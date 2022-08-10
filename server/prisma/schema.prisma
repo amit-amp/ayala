@@ -20,24 +20,26 @@ model User {
 
 model Currency {
   createdAt         DateTime        @default(now())
-  financialAssets   FinancialAsset? @relation(fields: [financialAssetsId], references: [id])
-  financialAssetsId String?         @unique
   id                String          @id @default(cuid())
   updatedAt         DateTime        @updatedAt
+  financialAsset FinancialAsset?
 }
 
 model CryptoToken {
   createdAt         DateTime        @default(now())
-  financialAssets   FinancialAsset? @relation(fields: [financialAssetsId], references: [id])
-  financialAssetsId String?         @unique
   id                String          @id @default(cuid())
   updatedAt         DateTime        @updatedAt
+  financialAsset FinancialAsset?
 }
 
 model FinancialAsset {
   createdAt   DateTime     @default(now())
-  cryptoToken CryptoToken?
-  currency    Currency?
+  cryptoToken CryptoToken? @relation(fields: [cryptoTokenId], references: [id])
+  cryptoTokenId String? @unique
+  currency Currency? @relation(fields: [currencyId], references: [id])
+  currencyId String? @unique
   id          String       @id @default(cuid())
   updatedAt   DateTime     @updatedAt
 }
+
+
