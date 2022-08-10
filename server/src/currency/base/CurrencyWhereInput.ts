@@ -15,6 +15,7 @@ import { FinancialAssetWhereUniqueInput } from "../../financialAsset/base/Financ
 import { ValidateNested, IsOptional } from "class-validator";
 import { Type } from "class-transformer";
 import { StringFilter } from "../../util/StringFilter";
+import { StringNullableFilter } from "../../util/StringNullableFilter";
 @InputType()
 class CurrencyWhereInput {
   @ApiProperty({
@@ -39,5 +40,16 @@ class CurrencyWhereInput {
     nullable: true,
   })
   id?: StringFilter;
+
+  @ApiProperty({
+    required: false,
+    type: StringNullableFilter,
+  })
+  @Type(() => StringNullableFilter)
+  @IsOptional()
+  @Field(() => StringNullableFilter, {
+    nullable: true,
+  })
+  value?: StringNullableFilter;
 }
 export { CurrencyWhereInput };

@@ -14,23 +14,27 @@ const CREATE_INPUT = {
   createdAt: new Date(),
   id: "exampleId",
   updatedAt: new Date(),
+  value: "exampleValue",
 };
 const CREATE_RESULT = {
   createdAt: new Date(),
   id: "exampleId",
   updatedAt: new Date(),
+  value: "exampleValue",
 };
 const FIND_MANY_RESULT = [
   {
     createdAt: new Date(),
     id: "exampleId",
     updatedAt: new Date(),
+    value: "exampleValue",
   },
 ];
 const FIND_ONE_RESULT = {
   createdAt: new Date(),
   id: "exampleId",
   updatedAt: new Date(),
+  value: "exampleValue",
 };
 
 const service = {

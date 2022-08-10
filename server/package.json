@@ -1,5 +1,5 @@
 {
-  "name": "@my-app/server",
+  "name": "@ayala/server",
   "private": true,
   "scripts": {
     "start": "nest start",

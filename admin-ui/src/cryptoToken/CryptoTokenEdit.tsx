@@ -5,6 +5,7 @@ import {
   EditProps,
   ReferenceInput,
   SelectInput,
+  TextInput,
 } from "react-admin";
 import { FinancialAssetTitle } from "../financialAsset/FinancialAssetTitle";
 
@@ -19,6 +20,7 @@ export const CryptoTokenEdit = (props: EditProps): React.ReactElement => {
         >
           <SelectInput optionText={FinancialAssetTitle} />
         </ReferenceInput>
+        <TextInput label="value" source="value" />
       </SimpleForm>
     </Edit>
   );

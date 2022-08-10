@@ -5,6 +5,7 @@ import {
   CreateProps,
   ReferenceInput,
   SelectInput,
+  TextInput,
 } from "react-admin";
 import { FinancialAssetTitle } from "../financialAsset/FinancialAssetTitle";
 
@@ -19,6 +20,7 @@ export const CurrencyCreate = (props: CreateProps): React.ReactElement => {
         >
           <SelectInput optionText={FinancialAssetTitle} />
         </ReferenceInput>
+        <TextInput label="value" source="value" />
       </SimpleForm>
     </Create>
   );

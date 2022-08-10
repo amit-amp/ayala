@@ -68,6 +68,7 @@ export class CryptoTokenControllerBase {
 
         id: true,
         updatedAt: true,
+        value: true,
       },
     });
   }
@@ -97,6 +98,7 @@ export class CryptoTokenControllerBase {
 
         id: true,
         updatedAt: true,
+        value: true,
       },
     });
   }
@@ -127,6 +129,7 @@ export class CryptoTokenControllerBase {
 
         id: true,
         updatedAt: true,
+        value: true,
       },
     });
     if (result === null) {
@@ -174,6 +177,7 @@ export class CryptoTokenControllerBase {
 
           id: true,
           updatedAt: true,
+          value: true,
         },
       });
     } catch (error) {
@@ -212,6 +216,7 @@ export class CryptoTokenControllerBase {
 
           id: true,
           updatedAt: true,
+          value: true,
         },
       });
     } catch (error) {

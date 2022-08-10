@@ -66,6 +66,7 @@ export class CurrencyControllerBase {
 
         id: true,
         updatedAt: true,
+        value: true,
       },
     });
   }
@@ -95,6 +96,7 @@ export class CurrencyControllerBase {
 
         id: true,
         updatedAt: true,
+        value: true,
       },
     });
   }
@@ -125,6 +127,7 @@ export class CurrencyControllerBase {
 
         id: true,
         updatedAt: true,
+        value: true,
       },
     });
     if (result === null) {
@@ -172,6 +175,7 @@ export class CurrencyControllerBase {
 
           id: true,
           updatedAt: true,
+          value: true,
         },
       });
     } catch (error) {
@@ -210,6 +214,7 @@ export class CurrencyControllerBase {
 
           id: true,
           updatedAt: true,
+          value: true,
         },
       });
     } catch (error) {
