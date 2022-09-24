@@ -9,18 +9,6 @@ import { UserList } from "./user/UserList";
 import { UserCreate } from "./user/UserCreate";
 import { UserEdit } from "./user/UserEdit";
 import { UserShow } from "./user/UserShow";
-import { CurrencyList } from "./currency/CurrencyList";
-import { CurrencyCreate } from "./currency/CurrencyCreate";
-import { CurrencyEdit } from "./currency/CurrencyEdit";
-import { CurrencyShow } from "./currency/CurrencyShow";
-import { CryptoTokenList } from "./cryptoToken/CryptoTokenList";
-import { CryptoTokenCreate } from "./cryptoToken/CryptoTokenCreate";
-import { CryptoTokenEdit } from "./cryptoToken/CryptoTokenEdit";
-import { CryptoTokenShow } from "./cryptoToken/CryptoTokenShow";
-import { FinancialAssetList } from "./financialAsset/FinancialAssetList";
-import { FinancialAssetCreate } from "./financialAsset/FinancialAssetCreate";
-import { FinancialAssetEdit } from "./financialAsset/FinancialAssetEdit";
-import { FinancialAssetShow } from "./financialAsset/FinancialAssetShow";
 import { jwtAuthProvider } from "./auth-provider/ra-auth-jwt";
 
 const App = (): React.ReactElement => {
@@ -40,7 +28,7 @@ const App = (): React.ReactElement => {
   return (
     <div className="App">
       <Admin
-        title={"ayala"}
+        title={"My service"}
         dataProvider={dataProvider}
         authProvider={jwtAuthProvider}
         theme={theme}
@@ -53,27 +41,6 @@ const App = (): React.ReactElement => {
           edit={UserEdit}
           create={UserCreate}
           show={UserShow}
-        />
-        <Resource
-          name="Currency"
-          list={CurrencyList}
-          edit={CurrencyEdit}
-          create={CurrencyCreate}
-          show={CurrencyShow}
-        />
-        <Resource
-          name="CryptoToken"
-          list={CryptoTokenList}
-          edit={CryptoTokenEdit}
-          create={CryptoTokenCreate}
-          show={CryptoTokenShow}
-        />
-        <Resource
-          name="FinancialAsset"
-          list={FinancialAssetList}
-          edit={FinancialAssetEdit}
-          create={FinancialAssetCreate}
-          show={FinancialAssetShow}
         />
       </Admin>
     </div>
