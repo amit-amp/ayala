@@ -1,5 +1,5 @@
 {
-  "name": "@ayala/server",
+  "name": "@my-service/server",
   "private": true,
   "scripts": {
     "start": "nest start",
@@ -68,8 +68,6 @@
   "jest": {
     "preset": "ts-jest",
     "testEnvironment": "node",
-    "modulePathIgnorePatterns": [
-      "<rootDir>/dist/"
-    ]
+    "modulePathIgnorePatterns": ["<rootDir>/dist/"]
   }
 }
